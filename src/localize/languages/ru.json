@@ -1,63 +1,63 @@
 {
   "services": {
     "generic": {
-      "parameter_to_value": "{parameter} к {value}",
+      "parameter_to_value": "{parameter} в {value}",
       "action_with_parameter": "{action} с {parameter}"
     },
     "climate": {
-      "set_temperature": "установить температуру[ {temperature}]",
-      "set_temperature_hvac_mode_heat": "обогрев[ {temperature}]",
-      "set_temperature_hvac_mode_cool": "охлаждение[ {temperature}]",
-      "set_temperature_hvac_mode_heat_cool": "обогрев/охлаждение[ {temperature}]",
-      "set_temperature_hvac_mode_heat_cool_range": "обогрев/охлаждение[ {target_temp_low} - {target_temp_high}]",
-      "set_temperature_hvac_mode_auto": "aвто[ {temperature}]",
-      "set_hvac_mode": "установить режим[ {hvac_mode}]",
-      "set_preset_mode": "выбрать набор настроек[ {preset_mode}]",
-      "set_fan_mode": "set fan mode[ to {fan_mode}]",
-      "set_swing_mode": "set swing mode[ to {swing_mode}]"
+      "set_temperature": "установить температуру[ на {temperature}]",
+      "set_temperature_hvac_mode_heat": "нагрев[ до {temperature}]",
+      "set_temperature_hvac_mode_cool": "охлаждение[ до {temperature}]",
+      "set_temperature_hvac_mode_heat_cool": "нагрев/охлаждение[ до {temperature}]",
+      "set_temperature_hvac_mode_heat_cool_range": "нагрев/охлаждение[ от {target_temp_low} до {target_temp_high}]",
+      "set_temperature_hvac_mode_auto": "авто[ до {temperature}]",
+      "set_hvac_mode": "установить режим[ на {hvac_mode}]",
+      "set_preset_mode": "установить пресет[ на {preset_mode}]",
+      "set_fan_mode": "режим вентилятора[ на {fan_mode}]",
+      "set_swing_mode": "режим качания[ на {swing_mode}]"
     },
     "cover": {
       "close_cover": "закрыть",
       "open_cover": "открыть",
-      "set_cover_position": "установить позицию[ {position}]",
-      "set_cover_tilt_position": "установить наклон[ {tilt_position}]"
+      "set_cover_position": "установить положение[ на {position}]",
+      "set_cover_tilt_position": "установить наклон[ на {tilt_position}]"
     },
     "fan": {
-      "set_speed": "установить скорость[ {speed}]",
-      "set_direction": "установить направление[ {direction}]",
-      "oscillate": "установить колебание[ {oscillate}]"
+      "set_percentage": "установить скорость[ на {percentage}]",
+      "set_direction": "установить направление[ на {direction}]",
+      "oscillate": "вращение[ на {oscillate}]"
     },
     "humidifier": {
-      "set_humidity": "установить влажность[ {humidity}]",
-      "set_mode": "установить режим[ {mode}]"
+      "set_humidity": "установить влажность[ на {humidity}]",
+      "set_mode": "установить режим[ на {mode}]"
     },
     "input_number": {
-      "set_value": "установить значение[ в {value}]"
+      "set_value": "установить значение[ на {value}]"
     },
     "input_select": {
-      "select_option": "установить опцию[ {option}]"
+      "select_option": "выбрать вариант[ {option}]"
     },
     "select": {
-      "select_option": "установить опцию[ {option}]"
+      "select_option": "выбрать вариант[ {option}]"
     },
     "light": {
-      "turn_on": "включить[ с {brightness} яркостью]"
+      "turn_on": "включить[ с яркостью {brightness}]"
     },
     "media_player": {
       "select_source": "выбрать источник[ {source}]"
     },
     "notify": {
-      "send_message": "послать сообщение"
+      "send_message": "отправить уведомление"
     },
     "script": {
-      "execute": "запустить"
+      "execute": "выполнить"
     },
     "vacuum": {
       "start_pause": "старт / пауза"
     },
     "water_heater": {
-      "set_operation_mode": "установить режим[ {operation_mode}]",
-      "set_away_mode": "установить режим вне дома"
+      "set_operation_mode": "установить режим[ на {operation_mode}]",
+      "set_away_mode": "режим «Вне дома»"
     }
   },
   "ui": {
@@ -65,53 +65,53 @@
       "date": {
         "day_types_short": {
           "daily": "ежедневно",
-          "workdays": "рабочие дни",
+          "workdays": "будни",
           "weekend": "выходные"
         },
         "day_types_long": {
           "daily": "каждый день",
-          "workdays": "по рабочим дням",
+          "workdays": "по будням",
           "weekend": "в выходные"
         },
         "days": "дни",
         "tomorrow": "завтра",
-        "repeated_days": "каждый {days}",
+        "repeated_days": "каждые {days}",
         "repeated_days_except": "каждый день кроме {excludedDays}",
-        "days_range": "с {startDay} до {endDay}",
-        "next_week_day": "в следующую {weekday}"
+        "days_range": "с {startDay} по {endDay}",
+        "next_week_day": "в след. {weekday}"
       },
       "time": {
         "absolute": "в {time}",
         "interval": "с {startTime} до {endTime}",
         "at_midnight": "в полночь",
         "at_noon": "в полдень",
-        "at_sun_event": "в {sunEvent}"
+        "at_sun_event": "наступление события {sunEvent}"
       }
     },
     "dialog": {
       "enable_schedule": {
-        "title": "Завершите модификации",
-        "description": "Расписание, которое было изменено, в настоящее время отключено, следует ли его включить?"
+        "title": "Завершить изменения",
+        "description": "Измененное расписание сейчас отключено, хотите его включить?"
       },
       "confirm_delete": {
         "title": "Удалить объект?",
         "description": "Вы уверены, что хотите удалить этот объект?"
       },
       "confirm_migrate": {
-        "title": "Изменить расписание",
-        "description": "При этом некоторые настройки будут потеряны. Вы хотите продолжить?"
+        "title": "Обновить расписание",
+        "description": "Некоторые настройки будут потеряны при этом изменении. Продолжить?"
       },
       "weekday_picker": {
-        "title": "Repeated days for schedule",
-        "choose": "Choose..."
+        "title": "Дни повторения расписания",
+        "choose": "Выбрать..."
       },
       "entity_picker": {
-        "title": "Choose entities",
-        "choose": "Choose...",
-        "no_results": "No matching items found"
+        "title": "Выберите объекты",
+        "choose": "Выбрать...",
+        "no_results": "Совпадений не найдено"
       },
       "action_picker": {
-        "title": "Choose action"
+        "title": "Выберите действие"
       }
     },
     "panel": {
@@ -121,52 +121,126 @@
         "default_name": "Расписание #{id}"
       },
       "overview": {
-        "no_entries": "Отсутствуют элементы",
-        "backend_error": "Нет соединенияс scheduler component. Scheduler component должен быть установлен до применения этой карты.",
-        "excluded_items": "{number} исключено {if number is 1} элемент {else} элементов",
+        "no_entries": "Нет элементов для отображения",
+        "backend_error": "Не удалось подключиться к компоненту scheduler. Его необходимо установить как интеграцию перед использованием этой карты.",
+        "excluded_items": "исключено элементов: {number}",
         "hide_excluded": "скрыть исключенные элементы",
-        "additional_tasks": "{number} больше {if number is 1} задача {else} задач"
+        "additional_tasks": "еще задач: {number}"
       },
       "editor": {
-        "repeated_days": "Repeated days",
-        "start_time": "Start time",
-        "stop_time": "End time",
-        "action": "Action",
-        "add_action": "Add action",
-        "select_timeslot": "Выберите временной слот",
-        "toggle_single_mode": "В простой режим",
+        "repeated_days": "Дни повторения",
+        "start_time": "Время начала",
+        "stop_time": "Время окончания",
+        "action": "Действие",
+        "add_action": "Добавить действие",
+        "select_timeslot": "Выберите временной интервал",
+        "toggle_single_mode": "В одиночный режим",
         "toggle_scheme_mode": "В режим схемы",
         "validation_errors": {
-          "overlapping_time": "Schedule has overlapping timeslots",
-          "missing_target_entity": "One or more actions are missing a target entity",
-          "missing_service_parameter": "One or more actions are missing a required setting",
-          "missing_action": "Schedule has no actions"
+          "overlapping_time": "В расписании есть пересекающиеся интервалы",
+          "missing_target_entity": "Для одного или нескольких действий не выбран объект",
+          "missing_service_parameter": "В одном или нескольких действиях отсутствуют обязательные настройки",
+          "missing_action": "В расписании нет действий"
         }
       },
       "options": {
         "conditions": {
-          "header": "Conditions",
-          "add_condition": "Add condition",
-          "new_condition": "New condition",
+          "header": "Условия",
+          "add_condition": "Добавить условие",
+          "new_condition": "Новое условие",
           "types": {
-            "equal_to": "{entity} is equal to {value}",
-            "unequal_to": "{entity} is unequal to {value}",
-            "above": "{entity} is above {value}",
-            "below": "{entity} is below {value}"
+            "equal_to": "{entity} равно {value}",
+            "unequal_to": "{entity} не равно {value}",
+            "above": "{entity} выше {value}",
+            "below": "{entity} ниже {value}"
           },
           "options": {
-            "logic_and": "All conditions must be true",
-            "logic_or": "Any condition must be true",
-            "track_changes": "Re-evaluate when conditions change"
+            "logic_and": "Все условия должны быть истинны",
+            "logic_or": "Любое из условий должно быть истинно",
+            "track_changes": "Переоценивать при изменении условий"
           }
         },
         "period": {
-          "header": "период",
-          "start_date": "From",
-          "end_date": "To"
+          "header": "Период",
+          "start_date": "С",
+          "end_date": "До"
         },
-        "repeat_type": "поведение после срабатывания",
-        "tags": "Tags"
+        "repeat_type": "поведение после завершения",
+        "tags": "Теги"
+      },
+      "card_editor": {
+        "tabs": {
+          "entities": "Объекты",
+          "other": "Прочее"
+        },
+        "fields": {
+          "title": {
+            "heading": "Заголовок карты",
+            "options": {
+              "standard": "стандартный",
+              "hidden": "скрытый",
+              "custom": "пользовательский"
+            },
+            "custom_title": "Свой заголовок"
+          },
+          "discover_existing": {
+            "heading": "Показать все расписания",
+            "description": "Автоматически добавлять на карту все ранее созданные расписания."
+          },
+          "time_step": {
+            "heading": "Шаг времени",
+            "description": "Разрешение (в минутах) для создания расписаний",
+            "unit_minutes": "мин"
+          },
+          "default_editor": {
+            "heading": "Редактор по умолчанию",
+            "options": {
+              "single": "Режим одиночного расписания",
+              "scheme": "Режим временной схемы"
+            }
+          },
+          "sort_by": {
+            "heading": "Сортировка",
+            "description": "Порядок отображения расписаний на карте",
+            "options": {
+              "relative_time": "По времени до следующего действия",
+              "title": "По названию расписания",
+              "state": "Сначала активные расписания"
+            }
+          },
+          "display_format_primary": {
+            "heading": "Основная информация",
+            "description": "Что отображать в качестве основного названия",
+            "options": {
+              "default": "Название расписания",
+              "entity_action": "Краткое описание задачи"
+            }
+          },
+          "display_format_secondary": {
+            "heading": "Дополнительная информация",
+            "description": "Что отображать в подзаголовке",
+            "options": {
+              "relative_time": "Время до следующего действия",
+              "time": "Время следующего действия",
+              "days": "Дни недели",
+              "additional_tasks": "Количество дополнительных задач"
+            }
+          },
+          "show_header_toggle": {
+            "heading": "Переключатель в заголовке",
+            "description": "Показать общий выключатель всех расписаний вверху карты"
+          },
+          "tags": {
+            "heading": "Теги",
+            "description": "Используйте теги для разделения расписаний между разными картами"
+          },
+          "entities": {
+            "button_label": "Настроить список объектов",
+            "heading": "Включенные объекты",
+            "description": "Выберите объекты для управления. Примечание: некоторые объекты (датчики) подходят только для условий.",
+            "included_number": "выбрано: {number}/{total}"
+          }
+        }
       }
     }
   }
